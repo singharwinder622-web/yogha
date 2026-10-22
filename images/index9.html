@@ -1,0 +1,588 @@
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>PaperNest</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-gray-50 text-slate-900">
+
+  <!-- NAVBAR -->
+  <header class="bg-white border-b border-gray-100">
+
+    <nav class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-12
+                min-h-[80px] sm:min-h-[88px]
+                flex items-center justify-between gap-4">
+
+      <!-- LOGO -->
+      <a href="#" class="flex items-center gap-2 sm:gap-3 shrink-0">
+
+        <div class="w-10 h-10 sm:w-12 sm:h-12
+                    bg-indigo-600 rounded-xl
+                    flex items-center justify-center">
+
+          <span class="text-xl sm:text-2xl">📖</span>
+
+        </div>
+
+        <div>
+          <h1 class="text-xl sm:text-2xl font-bold">
+            Paper<span class="text-indigo-600">Nest</span>
+          </h1>
+
+          <p class="hidden sm:block text-[10px] text-gray-500">
+            Your Study. Your Success.
+          </p>
+        </div>
+
+      </a>
+
+
+      <!-- DESKTOP MENU -->
+      <div class="hidden lg:flex items-center gap-7 xl:gap-10">
+
+        <a href="#"
+           class="text-indigo-600 font-medium border-b-2
+                  border-indigo-600 py-8">
+          Home
+        </a>
+
+        <a href="#" class="hover:text-indigo-600 transition">
+          Papers
+        </a>
+
+        <a href="#" class="hover:text-indigo-600 transition">
+          Notes
+        </a>
+
+        <a href="#" class="hover:text-indigo-600 transition">
+          Subjects
+        </a>
+
+        <a href="#" class="hover:text-indigo-600 transition">
+          Universities
+        </a>
+
+        <a href="#" class="hover:text-indigo-600 transition">
+          About Us
+        </a>
+
+      </div>
+
+
+      <!-- RIGHT SIDE -->
+      <div class="flex items-center gap-2 sm:gap-3">
+
+        <!-- THEME -->
+        <button
+          class="hidden sm:flex items-center
+                 bg-slate-900 rounded-full p-1">
+
+          <span class="bg-white rounded-full px-2 py-1 text-sm">
+            ☀️
+          </span>
+
+          <span class="text-white px-2 py-1 text-sm">
+            🌙
+          </span>
+
+        </button>
+
+
+        <!-- LOGIN -->
+        <button
+          class="hidden sm:block
+                 px-4 sm:px-6 py-2.5
+                 border border-indigo-500
+                 text-indigo-600
+                 rounded-lg
+                 font-semibold
+                 hover:bg-indigo-50
+                 transition">
+
+          Login
+
+        </button>
+
+
+        <!-- REGISTER -->
+        <button
+          class="px-4 sm:px-6 py-2.5
+                 bg-indigo-600 text-white
+                 rounded-lg
+                 font-semibold
+                 hover:bg-indigo-700
+                 transition">
+
+          Register
+
+        </button>
+
+
+        <!-- MOBILE MENU -->
+        <button
+          id="menuBtn"
+          class="lg:hidden text-2xl sm:text-3xl">
+
+          ☰
+
+        </button>
+
+      </div>
+
+    </nav>
+
+
+    <!-- MOBILE MENU -->
+    <div id="mobileMenu"
+         class="hidden lg:hidden border-t bg-white">
+
+      <div class="px-5 py-4 space-y-1">
+
+        <a href="#"
+           class="block px-4 py-3 rounded-lg
+                  bg-indigo-50 text-indigo-600 font-medium">
+          Home
+        </a>
+
+        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-50">
+          Papers
+        </a>
+
+        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-50">
+          Notes
+        </a>
+
+        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-50">
+          Subjects
+        </a>
+
+        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-50">
+          Universities
+        </a>
+
+        <a href="#" class="block px-4 py-3 rounded-lg hover:bg-gray-50">
+          About Us
+        </a>
+
+        <div class="pt-3">
+
+          <button
+            class="w-full bg-indigo-600
+                   text-white py-3 rounded-lg
+                   font-semibold">
+            Login
+          </button>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </header>
+<section class="bg-gradient-to-br from-indigo-50 via-white to-indigo-100">
+  <div class="max-w-6xl mx-auto px-6 py-14 grid lg:grid-cols-2 gap-10 items-center">
+
+    <!-- LEFT -->
+    <div>
+     <h2 class="text-4xl md:text-5xl font-bold leading-tight mt-5">
+  Study Smart.<br>
+  Prepare Better.<br>
+  <span class="text-indigo-600">Score Higher.</span>
+</h2>
+
+<p class="mt-5 text-gray-600 text-lg max-w-lg">
+  Explore question papers, notes and study resources
+  for all your subjects in one simple platform.
+</p>
+
+      <div class="flex flex-wrap gap-4 mt-7">
+        <button class="px-6 py-3 bg-indigo-600 text-white rounded-lg font-semibold">
+          Explore Papers 📖
+        </button>
+
+        <button class="px-6 py-3 border-2 border-indigo-500 text-indigo-600 rounded-lg font-semibold">
+          Upload Paper ☁️
+        </button>
+      </div>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="flex justify-center">
+      <img src="https://i.pinimg.com/1200x/ba/1b/67/ba1b674b5a4131adf53d2814389e2af7.jpg"
+           alt="Student studying"
+           class="w-full max-w-md rounded-full object-contain">
+    </div>
+
+  </div>
+</section>
+    <!-- SEARCH FILTER -->
+
+<section class="bg-gradient-to-br from-indigo-50 via-white to-indigo-100 py-14">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <!-- Heading -->
+    <div class="text-center mb-10">
+      <span class="px-4 py-2 bg-indigo-100 text-indigo-600 rounded-full text-sm">
+        🎓 Study Portal
+      </span>
+
+      <h2 class="text-4xl font-bold mt-4">
+        All Courses & <span class="text-indigo-600">Subjects</span>
+      </h2>
+
+      <p class="text-gray-600 mt-3">
+        BSC, BCA, MCA & MSC de saare important subjects ikko place te.
+      </p>
+    </div>
+
+    <!-- Courses -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <!-- BSC -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-2xl font-bold text-indigo-600">BSC</h3>
+        <div class="mt-4 space-y-2 text-gray-600">
+          <p>📘 Mathematics</p>
+          <p>💻 Computer Science</p>
+          <p>⚛️ Physics</p>
+          <p>🧪 Chemistry</p>
+          <p>🌱 Biology</p>
+        </div>
+      </div>
+
+      <!-- BCA -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-2xl font-bold text-indigo-600">BCA</h3>
+        <div class="mt-4 space-y-2 text-gray-600">
+          <p>💻 C Programming</p>
+          <p>☕ Java</p>
+          <p>🗄️ DBMS</p>
+          <p>🌐 Web Development</p>
+          <p>📊 Data Structures</p>
+        </div>
+      </div>
+
+      <!-- MCA -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-2xl font-bold text-indigo-600">MCA</h3>
+        <div class="mt-4 space-y-2 text-gray-600">
+          <p>🤖 Artificial Intelligence</p>
+          <p>🧠 Machine Learning</p>
+          <p>☁️ Cloud Computing</p>
+          <p>🔐 Cyber Security</p>
+          <p>📡 Computer Networks</p>
+        </div>
+      </div>
+
+      <!-- MSC -->
+      <div class="bg-white p-6 rounded-2xl shadow hover:-translate-y-2 transition">
+        <h3 class="text-2xl font-bold text-indigo-600">MSC</h3>
+        <div class="mt-4 space-y-2 text-gray-600">
+          <p>🧠 Soft Computing</p>
+          <p>🤖 Artificial Intelligence</p>
+          <p>📊 Data Science</p>
+          <p>💻 Advanced Computing</p>
+          <p>🔬 Research Methods</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- STATS -->
+
+<section class="pt-20 pb-8">
+
+    <div class="max-w-[1250px]
+                mx-auto
+                px-6
+                grid
+                grid-cols-2
+                lg:grid-cols-4
+                gap-8">
+
+
+        <!-- 1 -->
+
+        <div class="flex
+                    items-center
+                    gap-4">
+
+            <div class="w-12 h-12
+                        rounded-lg
+                        bg-purple-100
+                        flex
+                        items-center
+                        justify-center
+                        text-xl">
+
+                📄
+
+            </div>
+
+            <div>
+
+                <h3 class="text-2xl
+                           font-bold">
+
+                    50,000+
+
+                </h3>
+
+                <p class="text-gray-600">
+                    Question Papers
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 2 -->
+
+        <div class="flex
+                    items-center
+                    gap-4">
+
+            <div class="w-12 h-12
+                        rounded-lg
+                        bg-green-100
+                        flex
+                        items-center
+                        justify-center
+                        text-xl">
+
+                📚
+
+            </div>
+
+            <div>
+
+                <h3 class="text-2xl
+                           font-bold">
+
+                    10,000+
+
+                </h3>
+
+                <p class="text-gray-600">
+                    Study Notes
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 3 -->
+
+        <div class="flex
+                    items-center
+                    gap-4">
+
+            <div class="w-12 h-12
+                        rounded-lg
+                        bg-blue-100
+                        flex
+                        items-center
+                        justify-center
+                        text-xl">
+
+                👥
+
+            </div>
+
+            <div>
+
+                <h3 class="text-2xl
+                           font-bold">
+
+                    25,000+
+
+                </h3>
+
+                <p class="text-gray-600">
+                    Happy Students
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- 4 -->
+
+        <div class="flex
+                    items-center
+                    gap-4">
+
+            <div class="w-12 h-12
+                        rounded-lg
+                        bg-yellow-100
+                        flex
+                        items-center
+                        justify-center
+                        text-xl">
+
+                ⬇️
+
+            </div>
+
+            <div>
+
+                <h3 class="text-2xl
+                           font-bold">
+
+                    100,000+
+
+                </h3>
+
+                <p class="text-gray-600">
+                    Downloads
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+ <!-- POPULAR PAPERS -->
+<section class="bg-indigo-50/60 py-10 px-6">
+  <div class="max-w-7xl mx-auto">
+
+    <div class="flex justify-between items-center mb-6">
+      <div>
+        <h2 class="text-2xl font-bold">Popular Papers</h2>
+        <p class="text-gray-500 text-sm mt-1">Question papers for all courses</p>
+      </div>
+
+      <button id="viewAll"
+        class="border border-indigo-300 text-indigo-600 px-4 py-2 rounded-lg">
+        View All
+      </button>
+    </div>
+
+    <div id="paperList"
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    </div>
+
+  </div>
+</section>
+
+<script>
+const papers = [
+  ["Data Structures","BCA","3rd Semester","📄","purple"],
+  ["Database Management Systems","BCA","3rd Semester","📗","green"],
+  ["Operating Systems","BCA","3rd Semester","📙","orange"],
+  ["Computer Networks","BCA","3rd Semester","📘","blue"],
+
+  ["C Programming","BCA","1st Semester","💻","indigo"],
+  ["Web Development","BCA","2nd Semester","🌐","pink"],
+  ["Java Programming","BCA","4th Semester","☕","red"],
+  ["Software Engineering","BCA","5th Semester","⚙️","yellow"],
+
+  ["Artificial Intelligence","MCA","2nd Semester","🤖","purple"],
+  ["Machine Learning","MCA","3rd Semester","🧠","green"],
+  ["Cloud Computing","MCA","4th Semester","☁️","blue"],
+  ["Cyber Security","MCA","3rd Semester","🔐","red"],
+
+  ["Soft Computing","MSC","1st Semester","🧠","orange"],
+  ["Data Science","MSC","2nd Semester","📊","indigo"],
+  ["Advanced Computing","MSC","3rd Semester","💻","green"],
+  ["Research Methodology","MSC","4th Semester","🔬","purple"],
+
+  ["Mathematics","BSC","1st Semester","📐","blue"],
+  ["Physics","BSC","1st Semester","⚛️","orange"],
+  ["Chemistry","BSC","2nd Semester","🧪","green"],
+  ["Computer Science","BSC","3rd Semester","💻","indigo"]
+];
+
+const list = document.getElementById("paperList");
+const btn = document.getElementById("viewAll");
+
+let showAll = false;
+
+function showPapers() {
+  list.innerHTML = "";
+
+  const data = showAll ? papers : papers.slice(0, 4);
+
+  data.forEach(p => {
+    list.innerHTML += `
+      <div class="bg-white rounded-2xl shadow-sm overflow-hidden
+                  hover:-translate-y-1 hover:shadow-lg transition">
+
+        <div class="p-5">
+
+          <div class="w-14 h-14 bg-${p[4]}-100 rounded-xl
+                      grid place-items-center text-2xl mb-4">
+            ${p[3]}
+          </div>
+
+          <h3 class="font-bold text-lg">${p[0]}</h3>
+
+          <p class="text-gray-600 mt-2">
+            ${p[1]} – ${p[2]}
+          </p>
+
+          <p class="text-gray-500 text-sm">
+            GNDU
+          </p>
+
+        </div>
+
+        <div class="border-t flex">
+          <button class="w-1/2 py-3 text-indigo-600 hover:bg-indigo-50">
+            👁️ View
+          </button>
+
+          <button class="w-1/2 py-3 border-l text-indigo-600 hover:bg-indigo-50">
+            ⬇️ Download
+          </button>
+        </div>
+
+      </div>
+    `;
+  });
+
+  btn.textContent = showAll ? "Show Less" : "View All";
+}
+
+btn.onclick = () => {
+  showAll = !showAll;
+  showPapers();
+};
+
+showPapers();
+</script>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    const menuBtn = document.getElementById("menuBtn");
+    const mobileMenu = document.getElementById("mobileMenu");
+
+    menuBtn.addEventListener("click", () => {
+
+      mobileMenu.classList.toggle("hidden");
+
+      menuBtn.textContent =
+        mobileMenu.classList.contains("hidden")
+          ? "☰"
+          : "✕";
+
+    });
+
+  </script>
+
+</body>
+</html>

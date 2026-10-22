@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PaperNest | Student Portal</title>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+</head>
+
+<body class="bg-slate-50 text-slate-900">
+
+<!-- NAVBAR -->
+<nav class="fixed top-4 left-0 w-full z-50 px-5">
+  <div class="max-w-6xl mx-auto bg-white/90 backdrop-blur
+              shadow-lg rounded-2xl px-5 py-3
+              flex items-center justify-between">
+
+    <!-- LOGO -->
+    <div class="flex items-center gap-3">
+      <div class="w-11 h-11 bg-indigo-600 text-white
+                  rounded-xl flex items-center justify-center
+                  text-2xl shadow-md">
+        📖
+      </div>
+
+      <div>
+        <h1 class="font-extrabold text-xl text-indigo-700">
+          PaperNest
+        </h1>
+        <p class="text-[10px] text-gray-500">
+          Study • Prepare • Succeed
+        </p>
+      </div>
+    </div>
+
+    <!-- MENU -->
+    <div class="hidden md:flex items-center gap-7 text-sm font-semibold">
+      <a href="#" class="text-indigo-600">Home</a>
+      <a href="#papers" class="hover:text-indigo-600">Papers</a>
+      <a href="#notes" class="hover:text-indigo-600">Notes</a>
+      <a href="#subjects" class="hover:text-indigo-600">Subjects</a>
+      <a href="#about" class="hover:text-indigo-600">About</a>
+
+      <button class="bg-indigo-600 text-white px-5 py-2 rounded-lg
+                     hover:bg-indigo-700">
+        Login
+      </button>
+    </div>
+
+    <button class="md:hidden text-2xl">☰</button>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<section class="min-h-screen pt-32 pb-16
+                bg-gradient-to-br from-indigo-50 via-white to-purple-100">
+
+  <div class="max-w-6xl mx-auto px-6
+              grid md:grid-cols-2 gap-10 items-center">
+
+    <!-- TEXT -->
+    <div data-aos="fade-right">
+
+      <span class="bg-indigo-100 text-indigo-700
+                   px-4 py-2 rounded-full text-sm font-bold">
+        🎓 Student Study Portal
+      </span>
+
+      <h1 class="text-5xl md:text-6xl font-black
+                 leading-tight mt-6">
+        Study Smart.
+        <br>
+        <span class="text-indigo-600">Score Better.</span> 🚀
+      </h1>
+
+      <p class="text-gray-600 text-lg mt-5 max-w-lg">
+        Previous year papers, notes, important questions
+        and study material — everything in one place.
+      </p>
+
+      <div class="flex gap-3 mt-7">
+        <button class="bg-indigo-600 text-white px-6 py-3
+                       rounded-xl font-bold shadow-lg
+                       hover:bg-indigo-700">
+          📚 Explore Papers
+        </button>
+
+        <button class="bg-white border px-6 py-3
+                       rounded-xl font-bold
+                       hover:bg-indigo-50">
+          📝 Notes
+        </button>
+      </div>
+
+      <div class="flex gap-8 mt-9">
+        <div>
+          <b class="text-2xl text-indigo-600">500+</b>
+          <p class="text-sm text-gray-500">Papers</p>
+        </div>
+
+        <div>
+          <b class="text-2xl text-indigo-600">100+</b>
+          <p class="text-sm text-gray-500">Subjects</p>
+        </div>
+
+        <div>
+          <b class="text-2xl text-indigo-600">10+</b>
+          <p class="text-sm text-gray-500">Universities</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- IMAGE -->
+    <div class="relative" data-aos="fade-left">
+
+      <div class="absolute inset-5 bg-indigo-300
+                  rounded-full blur-3xl opacity-40">
+      </div>
+
+      <img
+        src="https://i0.wp.com/apeejay.news/wp-content/uploads/2026/06/300626-Exam-result-01.jpg?w=800&ssl=1"
+        alt="Student studying"
+        class="relative w-full rounded-[2rem]
+               border-8 border-white shadow-2xl">
+
+      <div class="absolute -bottom-5 -left-3
+                  bg-white px-5 py-3 rounded-2xl
+                  shadow-xl">
+        📚 <b>Exam Ready!</b>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- FEATURES -->
+<section class="py-16 bg-white">
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div class="text-center mb-10">
+      <p class="text-indigo-600 font-bold">Why PaperNest?</p>
+      <h2 class="text-4xl font-black mt-2">
+        Everything For Your Exam
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+      <div class="p-6 bg-indigo-50 rounded-2xl
+                  hover:bg-indigo-600 hover:text-white transition">
+        <div class="text-3xl">📚</div>
+        <h3 class="font-bold text-xl mt-4">Papers</h3>
+        <p class="text-gray-500 mt-2">
+          Previous year question papers.
+        </p>
+      </div>
+
+      <div class="p-6 bg-purple-50 rounded-2xl
+                  hover:bg-purple-600 hover:text-white transition">
+        <div class="text-3xl">📝</div>
+        <h3 class="font-bold text-xl mt-4">Notes</h3>
+        <p class="text-gray-500 mt-2">
+          Easy notes for quick revision.
+        </p>
+      </div>
+
+      <div class="p-6 bg-blue-50 rounded-2xl
+                  hover:bg-blue-600 hover:text-white transition">
+        <div class="text-3xl">🎯</div>
+        <h3 class="font-bold text-xl mt-4">Questions</h3>
+        <p class="text-gray-500 mt-2">
+          Important exam questions.
+        </p>
+      </div>
+
+      <div class="p-6 bg-green-50 rounded-2xl
+                  hover:bg-green-600 hover:text-white transition">
+        <div class="text-3xl">🎓</div>
+        <h3 class="font-bold text-xl mt-4">Subjects</h3>
+        <p class="text-gray-500 mt-2">
+          Subject-wise study material.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- SUBJECTS -->
+<section id="subjects" class="py-16 bg-slate-50">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+
+    <p class="text-indigo-600 font-bold">Explore</p>
+
+    <h2 class="text-4xl font-black mt-2">
+      Popular Subjects
+    </h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-5 gap-4 mt-8">
+
+      <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-lg">
+        💻 <b>Programming</b>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-lg">
+        ☕ <b>Java</b>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-lg">
+        🗄️ <b>DBMS</b>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-lg">
+        🌐 <b>Web Dev</b>
+      </div>
+
+      <div class="bg-white p-5 rounded-xl shadow-sm hover:shadow-lg">
+        📊 <b>Data Structure</b>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- CTA -->
+<section id="notes" class="py-16 bg-indigo-600 text-white text-center">
+  <h2 class="text-4xl font-black">
+    Ready For Your Exam? 🚀
+  </h2>
+
+  <p class="mt-3 text-indigo-100">
+    Start your preparation with PaperNest today.
+  </p>
+
+  <button class="mt-6 bg-white text-indigo-600
+                 px-7 py-3 rounded-xl font-bold">
+    Start Studying →
+  </button>
+</section>
+
+
+<!-- FOOTER -->
+<footer id="about" class="bg-slate-950 text-white py-8 text-center">
+  <h2 class="text-2xl font-black text-indigo-400">
+    📖 PaperNest
+  </h2>
+  <p class="text-gray-500 mt-2">
+    Your Study. Your Success.
+  </p>
+  <p class="text-gray-600 text-sm mt-4">
+    © 2026 PaperNest
+  </p>
+</footer>
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, once: true });
+</script>
+
+</body>
+</html>
